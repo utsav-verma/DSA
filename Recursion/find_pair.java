@@ -21,7 +21,7 @@ public class find_pair {
             return 0;
         }
         int  y = n-z;
-        System.out.println(z+" "+y);
+       
         if(iscube(y))// to check for perfect cube
         {
             return 1+pair(n,b+1);
@@ -32,10 +32,9 @@ public class find_pair {
     public static boolean iscube(int y)
     {
         double pow = (double)(1.0/3.0);//power
-        double i = Math.pow(y,pow);
-        double j = (int)Math.pow(y,pow);
-        // System.out.println(pow+" "+i+" "+j);
-        if(i==j)
+        
+        int j = (int)Math.round(Math.pow(y,pow));
+        if(y==(j*j*j))
         return true;
         return false;
     }
