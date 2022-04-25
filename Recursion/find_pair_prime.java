@@ -64,6 +64,7 @@ public class find_pair_prime {
        find_pair(allPair,n,p+1);
     //    return;
     }
-    // Time Complexity is O(n^2)
+    //Seive of Eratosthenes
+    // Time Complexity is O(n)
 }
 

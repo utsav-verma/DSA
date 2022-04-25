@@ -1,5 +1,5 @@
 import java.util.*;
-/* a^3 + b^3 = n , find all pair statisfying the condition*/
+/* a^3 + b^3 = n , find all pair statisfying the condition,a>=1 & b>=0*/
 /* Approach would be to traverse through number from 0 to n/2 ,
 as we have to find pair so n/2 
 now subtract n - b^3 to find a^3 and increase count ++
