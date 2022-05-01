@@ -90,8 +90,8 @@ public class unique_triplet {
 
     }
     public static void main(String[] args) {
-        int arr[] ={12, 3, 6, 1, 6, 9};
-        int sum =16;
+        int arr[] ={12, 1, 9, 9, 6, 6};
+        int sum =24;
         int n =arr.length-1;
         merge_sort(arr, 0, n);
         int start =0,end=n;
@@ -99,23 +99,24 @@ public class unique_triplet {
 
         for(int i=0;i<arr.length-3;i++)
         {
-            // if(arr[i]==arr[i+1])
-            // {
-            //     // /To avoid Repetation in Triplet
-            //     continue;
-            // }
+            if(arr[i]==arr[i+1])
+            {
+                // /To avoid Repetation in Triplet
+                continue;
+            }
             int first =arr[i];
             start =i+1;
             while(start<end)
             {
                 int second = arr[start];
                 int s = sum -(first+second);
-                if(arr[end]==s)
+                if(arr[end]==s&&second!=arr[end])
                 {
                     ArrayList<Integer> trip =new ArrayList<>();
                     trip.add(first);
                     trip.add(second);
                     trip.add(s);
+                    if(!allTrip.contains(trip))
                     allTrip.add(trip);
                     start++;end--;
                 }
