@@ -1,0 +1,2 @@
+     delete(arr);
+            display(arr);

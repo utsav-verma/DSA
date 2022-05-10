@@ -37,22 +37,7 @@ public class MergeSort {
                 b[k++] = nums[j++];
             }
         }
-        if(i>mid)
-        {
-            while(j<=r)
-            {
-                b[k++]=nums[j++];
-                
-            }
-        }
-        else
-        {
-            while(i<=mid)
-            {
-                b[k++]=nums[i++];
-
-            }
-        }
+        
         for(k=l;k<=r;k++)
         {
             nums[k] = b[k];

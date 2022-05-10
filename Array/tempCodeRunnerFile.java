@@ -1,4 +1,2 @@
-if(arr[i]==arr[i+1])
-            {
-                continue;
-            }//To avoid Repetation in Triplet
+System.out.println("Array : "+beautiful);
+            // System.out.println("size : "+size);
