@@ -19,8 +19,8 @@ public class palind_list {
         }
         Node mid=findMid(head);
         Node newHead=reverse(mid);
-        // display(head);
-        // display(newHead);
+        display(head);
+        display(newHead);
         boolean isPalin=isPalin(head,newHead);
         System.out.println(isPalin);
     }
