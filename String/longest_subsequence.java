@@ -1,7 +1,7 @@
 /**
  * *Question :- Find the Longest subsequence of given two String
  * * Subsequence of a b c are :- a,b,c,ab,bc,ca,abc
- * !Approach :-  Find all the common Characters in it and then check the common number o0f characters in other this way we get longest susequence
+ * !Approach :-  Find all the common Characters in it and then check the common number 0f characters in other, count of common characters is this way we get longest susequence
  */
 
 import java.util.*;
