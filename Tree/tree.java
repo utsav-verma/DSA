@@ -41,6 +41,14 @@ public class tree {
 
        return root;
     }
+    public static void InOrder(Node head)
+    {
+        if(head==null)
+        return;
+        InOrder(head.left);
+        System.out.println(head.data);
+        InOrder(head.right);
+    }
 
     public static void main(String[] args) {
         Node root;
