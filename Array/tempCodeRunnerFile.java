@@ -1,2 +1,2 @@
-System.out.println("Array : "+beautiful);
-            // System.out.println("size : "+size);
+swap(arr,i-1,min);
+            // reverse(arr,i,n);
