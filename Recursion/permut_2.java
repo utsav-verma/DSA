@@ -15,6 +15,7 @@ public class permut_2 {
         Set<String> ans = new HashSet<>();
         permutation(arr,0,ans);
         System.out.println(ans.size());
+        System.out.println(ans);
     }
     public static void permutation(int arr[],int i,Set<String> ans)
     {
